@@ -47,3 +47,21 @@ class Carro {
 
 const carro = new Carro('Chevrolet', 'prisma', 250);
 carro.acelerar();
+
+// Herança quando uma classe herda os metodos da classe pai e pode ter novos metodos
+class Camaro extends Carro {
+    private turbo = false;
+
+    constructor() {
+        super('Chevrolet', 'Camaro', 500);
+    }
+
+    ligarTurbo() {
+        this.turbo = true;
+    }
+}
+
+let camaro = new Camaro();
+camaro.acelerar();
+camaro.frear();
+camaro.ligarTurbo();
