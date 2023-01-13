@@ -75,3 +75,26 @@ function exibirNota(nota: number | string | boolean) {
 exibirNota('10');
 exibirNota(10);
 exibirNota(true);
+
+// Alias (cria atalhos para os tipos, pesonalizar tipos para seu uso)
+// Alias mais personalizado
+type Funcionario = {
+    nome: string;
+    sobrenome: string;
+    dataNascimento: Date;
+}
+let funcionarios: Funcionario[] = [{
+    nome: 'Silvio',
+    sobrenome: 'Cesar',
+    dataNascimento: new Date()
+}, {
+    nome: 'Fulano',
+    sobrenome: 'De Tal',
+    dataNascimento: new Date()
+}];
+
+function tratarFuncionarios(funcionarios: Funcionario[]) {
+    for(let funcionario of funcionarios) {
+        console.log('Nome do funcionário: ', funcionario.nome);
+    }
+}
