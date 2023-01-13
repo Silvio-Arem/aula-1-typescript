@@ -6,13 +6,14 @@
 
 <br>
 
-<p align="center">Nesta aula veremos como funciona a linguagem Typescript:</p><br>
+<p align="center">Nesta aula veremos como funciona a linguagem Typescript:</p><br><br>
 <ul style= "text-align: center; list-style-type: none">
     <li> Como iniciar um arquivo projeto em typescript com o comando "tsc --init"</li><br>
     <li> Como gerar um arquivo compilado de .js para poder rodar no browser o .ts escrito com o comando "tsc"</li><br>
     <li> Os tipos possíveis no Typescript veja mais clicando <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">aqui</a></li><br>
     <li> Como funcionam as Interfaces no Typescript veja mais clicando <a href="https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces">aqui</a></li><br>
     <li> Como funcionam as Classes no Typescript</li><br>
+    <li> Como definir o target para "es5" no arquivo tsconfig.json gerado la no inicio, a fim de atender até até os mais antigos tipos de browsers</li><br>
 </ul>
 
 <br>
