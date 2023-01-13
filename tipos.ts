@@ -51,3 +51,16 @@ criar({
     propriedade: 1
 })
 // criar('Silvio') // Dá erro
+
+// Never (um tipo que nunca termina)
+function loopInfinito(): never {
+    while (true) { }
+}
+// Never (também utilizado para erro)
+function erro(mensagem: string): never {
+    throw Error(mensagem)
+}
+// Never (também utilizado para falha)
+function falha(): never {
+    return erro('Algo falhou');
+}
