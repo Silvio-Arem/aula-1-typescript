@@ -5,3 +5,14 @@ interface Usuario {
     email: string;
     endereco?: string;
 }
+
+function getUser(): Usuario {
+    return {
+        nome: 'Silvio',
+        email: 'silvio@email.com'
+    }
+}
+
+function setUser(usuario: Usuario) {
+    // ...
+}
