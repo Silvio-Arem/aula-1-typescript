@@ -14,7 +14,8 @@
     <li> Como funcionam as Interfaces no Typescript veja mais clicando <a href="https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces">aqui</a></li><br>
     <li> Como funcionam as Classes no Typescript</li><br>
     <li> Como definir o target para "es5" no arquivo tsconfig.json gerado la no inicio, a fim de atender até até os mais antigos tipos de browsers</li><br>
-    <li> Como funcionam os modificadores de acesso</li><br>
+    <li> Como funcionam os modificadores de acesso no Typescript</li><br>
+    <li> Como funcionam as heranças no Typescript</li><br>
 </ul>
 
 <br>
