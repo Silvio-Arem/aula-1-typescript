@@ -115,4 +115,12 @@ let contato: Contato = {
     telefone1: '12345678',
 }
 
-//
+// Type Assertion (utilizando "as" ou o "<>" podemos afirmar depois o tipo da variável após declará-la como any por exemplo)
+let minhaIdade: any = 23;
+(minhaIdade as number).toString();
+(<number>minhaIdade).toString();
+// também podemos afirmar para o typescript que uma informação que ele está buscando no DOM é o que ele aceita, neste caso um HTMLInputElement ou HTMLImageElement de 2 formas, o "as" ou com o "<>" conforme abaixo:
+let image = document.getElementById("imagem1") as HTMLImageElement;
+let input = <HTMLInputElement>document.getElementById("numero1");
+console.log(input.value);
+console.log(image.src);
