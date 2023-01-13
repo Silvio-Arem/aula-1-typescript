@@ -64,3 +64,14 @@ function erro(mensagem: string): never {
 function falha(): never {
     return erro('Algo falhou');
 }
+
+// Union Types (união de um ou mais tipos)
+// aplicado em variáveis
+let nota: string | number = 5;
+// Aplicado em funções
+function exibirNota(nota: number | string | boolean) {
+    console.log(`A nota é ${nota}`);
+}
+exibirNota('10');
+exibirNota(10);
+exibirNota(true);
