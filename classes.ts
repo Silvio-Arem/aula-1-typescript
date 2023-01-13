@@ -27,8 +27,13 @@ class Carro {
     ) {}
 
     private alterarVelocidade(delta: number) {
-        // faço as avaliações de aceleração e franagem
-        // this.velocidadeAtual = xxx
+        let novaVelocidade = this.velocidadeAtual + delta;
+
+        if(novaVelocidade >= 0 && novaVelocidade <= this.velocidadeMaxima){
+            this.velocidadeAtual = novaVelocidade;
+        } else {
+            this.velocidadeAtual = delta > 0 ? this.velocidadeMaxima : 0
+        }
     }
 
     acelerar() {
