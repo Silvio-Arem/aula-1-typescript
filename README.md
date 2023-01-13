@@ -10,7 +10,7 @@
 <ul style= "text-align: center; list-style-type: none">
     <li> Como iniciar um arquivo projeto em typescript com o comando "tsc --init"</li><br>
     <li> Como gerar um arquivo compilado de .js para poder rodar no browser o .ts escrito com o comando "tsc"</li><br>
-    <li> Os tipos possíveis no Typescript</li><br>
+    <li> Os tipos possíveis no Typescript veja mais clicando <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">aqui</a></li><br>
 </ul>
 
 <br>
