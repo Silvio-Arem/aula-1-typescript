@@ -94,7 +94,25 @@ let funcionarios: Funcionario[] = [{
 }];
 
 function tratarFuncionarios(funcionarios: Funcionario[]) {
-    for(let funcionario of funcionarios) {
+    for (let funcionario of funcionarios) {
         console.log('Nome do funcionário: ', funcionario.nome);
     }
 }
+
+// Valores Nulos ou Opcionais (podemos declarar com null também utilizando o pipe "|" ou também colocar o ponto de interrogação "?", tornando opcional a tipagem ou declaração)
+// Utilizando o null
+let altura: number | null = 1.6;
+altura = null;
+// utilizando o ?
+type Contato = {
+    nome: string;
+    telefone1: string;
+    telefone2?: string;
+}
+
+let contato: Contato = {
+    nome: 'Silvio',
+    telefone1: '12345678',
+}
+
+//
