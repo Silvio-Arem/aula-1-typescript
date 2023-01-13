@@ -1,4 +1,4 @@
-// Classe definindo os acessos das propriedades das classes podemos dizer se ela pode ser acessadas fora da classe ou não.
+// Classe = definindo os acessos das propriedades das classes podemos dizer se ela pode ser acessadas fora da classe ou não.
 class Data {
     // dia: number;
     // mes: number;
@@ -15,3 +15,30 @@ let data = new Data(1, 1, 2023);
 console.log(data.dia);
 
 let data2 = new Data(1, 1);
+
+// Modificadores de Acesso
+class Carro {
+    private velocidadeAtual: number = 0;
+
+    constructor(
+        public marca: string,
+        public modelo: string,
+        private velocidadeMaxima: number = 220
+    ) {}
+
+    private alterarVelocidade(delta: number) {
+        // faço as avaliações de aceleração e franagem
+        // this.velocidadeAtual = xxx
+    }
+
+    acelerar() {
+        this.alterarVelocidade(5);
+    }
+
+    frear() {
+        this.alterarVelocidade(-5);
+    }
+}
+
+const carro = new Carro('Chevrolet', 'prisma', 250);
+carro.acelerar();
