@@ -20,7 +20,7 @@ let idades2: Array<number> = [23, 28, 45, 32, 45];
 let jogadores: [string, number, boolean];
 jogadores = ['Silvio', 3, true];
 
-// Enum
+// Enum (é uma forma de dar nomes mais amigáveis ​​a conjuntos de valores numéricos)
 enum StatusAprovacao {
     Aprovado = '001',
     Pendente = '002',
@@ -28,5 +28,26 @@ enum StatusAprovacao {
 }
 let statusDataAprovacao: StatusAprovacao = StatusAprovacao.Aprovado;
 
-// Any
+// Any (não recomendado, pois anula a tipagem do typescript)
 let returnDaAPI: any = [123, 'Vitor', false];
+let returnDaAPI2: any = {
+    // .....
+}
+
+// void (não retorna nada)
+function printarNaTela(msg: string): void {
+    console.log(msg);
+}
+
+// Null e Undefined
+let u: undefined = undefined;
+let n: null = null;
+
+// Object
+function criar(objeto: object) {
+    // ......
+}
+criar({
+    propriedade: 1
+})
+// criar('Silvio') // Dá erro
